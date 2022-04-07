@@ -12,7 +12,8 @@ import io.cucumber.junit.CucumberOptions;
 //Where is Cucumber Class //PATH
 //Glue is telling us where the implementation are under which package
 @CucumberOptions(features = {"src/test/resources/Login/Login.feature"},
-glue = {"Defination"},dryRun = false)
+glue = {"Defination"},dryRun = false,
+plugin = {"html:testoutput/cucumber.html","junit:testoutput/cucumber.xml"})   
 
 //dry run will not execute the defination file
 
